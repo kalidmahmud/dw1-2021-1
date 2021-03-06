@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <h2>Tipos de Imagens</h2>
+    <h3>1 Imagens vetoriais</h3>
+    <p>Imagens vetoriais são representadas internamente por equações matematicas e formas geometricas, em um sistema bidimencional de coordenadas</p>
+    <p>Para exibir imagens vetoriais, o computador precisa interpretar essas equações e desenhar a imagem de acordo com as dienções da imagem.</p>
+    <h4>Vantagens</h4>
+    <ul>
+        <li>podem ser redimencionadas sem perda de qualidade</li>
+        <li>São ideias para representar ilustrações simples e desenhos tecnicos, como mapas</li>
+        
+    </ul>
+    <h4>Desvantagens</h4>
+    <ul>
+        <li>Dependendo do nivel de detalhe contido em uma imagem vetorial, o desenho pode demorar muito tempo para carregar por conta do numero de calculos neceessarios para exibi-la</li>
+    </ul>
+    <h4>Formatos de imagem vetorial</h4>
+    <ul>
+        <li><strong>SVG</strong> (<em>Scalable Vector Graphics</em>, Figura  de vetores escalaveis).Esse formato é lido e gravado por uma serie de programas, como Adobe Ilustrator e o Inkscape. Os navegadores de Internet modernos são capazes de exibir SVG.</li>
+        <li>Outros formatos de imagens vetoriais, mas que não são suportados diretamente pelos navegadores de internet incluem: CDR (Corel Draw), AI (Adobe Ilustrator).</li>
+    </ul>
+    <h3>2. Imagens de <em>bitmap</em></h3>
+    <p>
+        São imagens que utilizam mapa de <em>bits</em>para representar a imagem. Uma imagem é interpretada como um mosaico de pontos(Chamados Pixels), e os formatos devem armazenar as informações de cor para cada um desses pontos.
+    </p>
+    <p>
+        Imagens <em>bitmap</em> são as mais comumente utilizadas na internet, porque seu carregamento não depende de cálculos complicados (processamento), tendendo a ser mais rápido que o caso das imagens vetoriais. No entanto, imagens de dimenssões muito grandes geram arquivos igualmente grandes, o que pode também se refletir no tempo de carregamento
+    </p>
+    <p>
+        Para equacionar o problema de imagens de <em>bitmap</em> muito grandes, os formatos geralmento dispoem do recurso de compressão, à custa da qualidade da imagem.
+    </p>
+    <p>
+        A maioria dos sistemas operacionais trabalha nativamente com imagens de <em>bitmap</em>. Imagens vetoriais, para serem exibidas nesses sistemas, são convertidas em memória, no momento da exibição, em imagens de <em>bitmap</em>. 
+    </p>
+    <h4>Vantagens</h4>
+    <ul>
+        <li>Por se tratar do formato nativo de imagens dos sistemas operacionais, o carregamento tende a ser mais ágil do que no caso de imagens vetoriais com muitos detalhes.</li>
+        <li>Todos os navegadores, ate os mais antigos, conseguem ler os formatos de <em>bitmap</em> mais comuns.</li>
+    </ul>
+    <h4>Desvantagens</h4>
+    <ul>
+        <li>Imagens de <em>bitmap</em> não podem ser redimencionadas sem perda de qualidade e nitidez.</li>
+        <li>Imagens de alta resolução, com muitos megapixels, geram arquivos muito grandes, mesmo com compressão. O ideal é que essas imagens sejam redimencionadas  (para baixo) e tratadas em programas especializados antes de serem usadas em paginas de internet.</li>
+
+    </ul>
+    <h4>Formatos de imagem <em>bitmap</em></h4>
+    <ul>
+        <li><strong>JPG</strong>ou <strong>JPEG</strong> (<em>Joint Photographic Experts Group</em>, Grupo Conjunto de Especialistas em Fotografia). Formato com compressão variavel voltado a fotografias. Não suporta Transparencia</li>
+        <li><strong>PNG</strong>(<em>Portable Network</em>, Figura Portável de Rede). Formato que suporta transparencia e compressão. Mais usado para figuras que são o resultado da exportação de uma imagem vetorial, como, por exemplo, logotipos.</li>
+        <li><strong>GIF</strong>(<em>Graphics Interchange  Format</em>, Formato de Intercambio de Figuras). É um formato mais antigo que a propria internet, suportando compressão e transparencia e animação. Seu uso na Internet levantou problemas de violação de patente, pois o formato não era livre, o que levou ao desenvolvimento do PNG.</li>
+        <li><strong>WebP</strong> (pronuncia-se <em>weppy</em>). Formato livre, patrocinado pelo Goolge. Oferece compressão de melhor qualidade que os formatos JPG e PNG, e também suporta transparencias e animações.</li>
+        <li><strong>BMP</strong>(<em>Bitmap</em>, Mapa de Bits). Formato de arquivo nativo do Windows (MS Paint), sem suporte a compressão. Portanto, tende a gerar arquivos grandes.</li>
+    </ul>
+    <h4>Programas capazes de manipular imagens de <em>bitmap</em></h4>
+            <ul>
+            <li>Adobe Photoshop (formato nativo:PSD, não entendido pelos navegadores)</li>
+            <li>GIMP (formato nativo: XCF)</li>
+            <li>Krita (formato nativo: KRA)</li>
+        </ul>
+    </body>
+</html>
