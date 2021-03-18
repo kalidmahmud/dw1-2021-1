@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links (hyperlinks ou hiperligações)</title>
+
+<link rel="stylesheet" href="08.css">
 </head>
 <body>
 
@@ -37,8 +39,68 @@
             href indica o destino do link 
             sempre que o destino linkado nao pertencer ao nosso proprio site, o URL precisa iniciar com o protocolo (http:// ou https://).
     -->
-
+<!--
+    O Elemento <a> é tambem um elemento de linha (fica na mesma linha)
+    Link externo leva para uma pagina em outro site. Precisa começar com http:// ou https:// (endereço completo)
+-->
+    <div>
     <a href="https://site.fatecfranca.edu.br">Site oficial da Fatec Franca</a>
+    </div>
+
+    <!--Link interno leva para uma pagina do proprio site, não precisa começar com o http:// ou https:// (prefixo do protocolo)-->
+    <p> <!--tambem é um elemento de bloco-->
+    
+    para maiores informações sobre o uso de imagens em html     <a href="07-imagens2.html">Imagens 2</a> esta tudo explicado la
+
+    </p>
+
+    <!-- link externo que abre em uma nova janela
+    para isso usamos o atributo com o valor _blank-->
+    <div>
+    <a href="http://www.cps.sp.gov.br"target="-blank"> Site do centro paula Souza</a>
+    </div>
+    
+    
+    <!--Link de imagem, o link pode ser interno ou externo
+    O Recheio da tag <a>, em vez de ser um texto, é uma tag <img>-->
+    <div>
+        <a href="07-imagens2.html" title="Pagina principal do site da Apptiva">
+            <img src="img/apptiva-icon.png" alt="Site do Apptiva">
+        </a>
+    </div>
+
+    <div>
+        <a href="03-listas.html">listas em html</a>
+    </div>
+
+    <!--
+        Atributo rel = estabelece a relação entre a pagina atual e a pagina linkada ATRIBUTO SEMANTICO
+        valores possiveis:
+        nofolow = o autor da pagina não endossa (nao concorda, necessariamente ) com o conteudo  de destino
+        prev= link para pagina anterior do mesmo site
+        next = link para a pagina seguinte do mesmo site
+        external = link sites externos
+        author = link para o site pessoal do autor da pagina
+    -->
+    <div>
+        <a href="https://produto.mercadolivre.com.br/MLB-1459346254-livro-html-e-css-projete-e-construa-websites-alta-books-_JM#position=2&type=item&tracking_id=efd55f3e-6c17-4ad7-b798-c5fcb82c0f23" rel="nofollow">Livro de Html</a>
+    </div>
+
+    <br>
+
+    <a href="09-nao-existe.html" rel="next">pagina seguinte</a>
+
+    <br>
+    <a href="07-imagens2.html"rel="prev">pagina anterior</a>
+
+    <br>
+
+    <a href="http://www.pudim.com.br"rel="external">site externo</a>
+
+    <br>
+
+    <a href="http://faustocintra.com.br" rel="author" target="_blank">Fale com o author</a>
+
     
 </body>
 </html>
