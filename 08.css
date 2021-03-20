@@ -8,7 +8,7 @@ a{
 /* links ja visitados*/
 a:visited{
     color: green;
-    filter: brightness(1%); /*cor 50% mais escura, inclusive link de imagem*/
+    
 }
 /*link enquanto o mouse esta sobre ele*/
 a:hover{
