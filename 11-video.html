@@ -7,6 +7,26 @@
 </head>
 <body>
     <h1>Video em HTML</h1>
+
+    <h2>Formatos de Video</h2>
+    <p>Para enternder os formatos de video, é preciso entender primeiro o que são os <em>codecs</em>(codificadores/decodificadores). Trata-se de algoritimos que codificam e depois decodificam varias imagens em sequencia para criar a ilusão de movimento. Alguns <em>codecs</em>de video não lidam com a parte de som. Com isso, torna-se necessario acrescentar o audio em uma parte separada, usando um dos formatos de audio ja estudados </p>
+    <p>Para juntar as partes de video, audio e outras informações(como, por exemplo, as legendas) em um unico arquivo, existem os formatos <em>container</em>. Esses formatos podem parecer iguais por fora, enquanto, por dentro, trazem trilhas multimidia produzidas com <em>codecs</em> diferentes.Por isso, o equipamento que irá reproduzi-los precisa, além de reconhecer o formato do arquivo <em>container</em>, ter também instalados os <em>codecs</em> mais comuns</p>
+   
+   <ul>
+       <li><strong>MP4</strong>: formato intriduzido em 2001 pela ISO (<em>International Standards Organization</em>, Organização Internacional de Padões), e que se tornou o padrão de marcado. É um formato <em>container</em>, que suporta varios <em>codecs</em>tanto de audio como de video, que usualmente estão sob compressão</li>
+       <li><strong>M4V</strong>formato introduzido pela Apple, tecnicamente semelhante ao MP4. No entanto, esse formato suporta DRM (<em>Digital Rights Management</em>, Gerenciamento de Direitos Digitais ), permitindo que conteudos protegidos por direitos autorais só possam ser reproduzidos por quem tiver adquirido a licença para tal.</li>
+       <li><strong>WEBM</strong> Projeto irmão WebP, iniciado peloa Fundação Xiph.org em 2010 e depois assumido pelo Google. É também um formato <em>container</em> que promete melhor qualidade de comprensão em um menor tamanho de arquivo quando comparado ao MP4</li>
+
+       <li><strong>OGV</strong>formato <em>container</em> da familia OGG Vorbis, introduzido pela fundação Xiph.org em 2004, de livre utilização</li>
+       <li><strong>AVI</strong>sigla para <em>Audio Video Interleaved</em>(Audio e video Entrelaçados), introduzido pela Microsoft em 1992. É um formato sem comprensão, tedendo a gerar arquivos muito grandes /li>
+   </ul>
+
+   <h2>Problemas com a hospedagem de videos</h2>
+
+   <p>Hospedar videos em seu proprio <em>website</em> pode sair caro, pois varias hospedagens atualmente, cobram por trafego. Um típico video de 500mb de tamanho, por exemplo, o ser reproduzido 20 vezes, terá consumido 10gb de trafego( ou de banda, como se ouve com mais frequencia).</p>
+
+   <p>Portanto, na maioria das vezes, o melhor a se fazer é hospedar seu video em serviços como youtube ou o Vimeo, e apenas incorporar ("lincar") o video em seu <em>site</em>. Enquanto videos hospedados no youtube geralmente estarão disponiveis para um publico amplo, enquanto o Vimeo, mediante pagamento, permite restringir o acesso aos videos.</p>
+
     <h2>Exemplo de video com multiplas fontes</h2>
     
     <!--
@@ -18,7 +38,14 @@
         <source src="video/reduzir-pdf.mp4" type="video/mp4">
             <source src="video/reduzir-pdf.ogv" type="video/ogg">
                 <source src="video/reduzir-pdf.webm" type="video/webm">
-    <p>nao foi possivel baixar o video. Faça o <a href="video/reduzir-pdf.mp4" download="reduzir-pdf.mp4"type="video/mp4">download</a>do arquivo</p>
+    <p>nao foi possivel baixar o video. Faça o <a href="video/reduzir-pdf.mp4" download="reduzir-pdf.mp4" type="video/mp4">download</a>do arquivo</p>
     </video>
+
+    <h2>Exemplos de videos incorporados</h2>
+    <p>Video incorporado do Youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jgQjeqGRdgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p><iframe src="https://player.vimeo.com/video/45160630" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+<p><a href="https://vimeo.com/45160630">Rihanna - &quot;Umbrella&quot;</a> from <a href="https://vimeo.com/user10061515">Paul Caslin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </body>
 </html>
