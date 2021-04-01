@@ -1,0 +1,32 @@
+div.container {
+    background-color: darkgrey;
+    font-family: calibri, arial, sans;
+    padding: 20px;/*espaçamento interno*/
+    border-left: 7px dotted black;
+    border-right: 7px dashed blue;
+}
+/*divs internas*/
+div.container div{
+    border: 1px solid red;
+    padding: 12px;
+    margin-bottom: 16px;/*apenas a margem inferior*/
+}
+#box1 {
+    background-color: goldenrod;
+    padding: 40px 30px;/* dois valores o primeiro serve oara o top e o botom e o segundo left e right "sinal da Cruz"*/
+}
+#box2{
+    background-color: lightskyblue;
+    /*
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 8px;
+    */
+    padding: 30px 8px 25px 40px;/*começa pelo top e depois vai no sentido horario*/
+}
+#box3{
+    background-color: yellowgreen;
+    margin-bottom: 0;
+
+}
