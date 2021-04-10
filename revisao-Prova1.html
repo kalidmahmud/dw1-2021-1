@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*regras de elemento aplica-se a todos os DIv
+        
+        Hierarquia de regras CSS
+        1 regras de #id prevalecem sobre as regras de classses
+        2 regras de .classe prevalecem sobre regras de elemento
+        3 entre regras do mesmo tipo, prevalece a que foi aplicada*/
+        div {
+            border: 2px dotted blue;
+            margin: 30px;
+            padding: 10px;
+        }
+        #cx1{
+            text-align: center;
+            border: 1px solid green;
+        }
+        #cx3{
+            text-align: right;
+        }
+        .fundo-amarelo {
+            background-color: yellow;
+            font-size: 30px;
+            border: 2px solid orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "cx1" class = "fundo-amarelo">
+        caixa1
+    </div>
+    <div id = "cx2">
+        caixa2
+    </div>
+    <div id = "cx3"class = "fundo-amarelo">
+        caixa3
+    </div>
+    
+</body>
+</html>
