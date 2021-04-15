@@ -1,0 +1,40 @@
+* {
+    font-family: Calibri, Arial, sans-serif;    /* Fonte para todos os elementos */
+}
+body {
+    background-color: navy;    /* Cor de fundo */
+    font-size: 16px;              /* Tamanho da fonte */
+}
+#root {
+    font-size: 18px;                /* Tamanho da fonte */
+    border-radius: 16px;            /* Bordas arredondadas */
+    border-top: 50px;
+    border-width: 35;
+    border-left: 35px;
+    border-right: 20px;
+    padding: 20px;    
+    background-color: white;     /* Cor de fundo */
+}
+h1, h2 {
+    color: navy;        /* Cor do texto */
+}
+h1 {
+                                       
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.4);    /* Sombra do texto */
+}
+figcaption {
+    
+    
+    font-style: italic;      /* Estilo da fonte */    
+}
+ol[type="1"], ol:not([type]) {  /* Lista ordenada de primeiro nível */
+    
+    margin-left: 30%;       /* Margem esquerda */
+}
+ol[type="1"] > li, ol:not([type]) > li {
+    font-weight: bold; color: orange;  /* Coloca em negrito os itens da lista ordenada de primeiro nível */
+}
+iframe {                /* Elemento que contém o vídeo do Youtube */
+    display: block;     /* Exibição em bloco */
+    margin: 0 auto;     /* Centraliza horizontalmente */
+}
